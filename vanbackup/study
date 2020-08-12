@@ -1,0 +1,2 @@
+POSIX:可移植操作系统接口(potable operating system interface)X 表明其对unix API 的传承
+操作系统的API通常是以C库的方式提供的,系统调用的函数通常与C库的函数名相同但也并不是一一对应的,可能几个不同的函数会调用到同一个系统调用(例如：malloc和free都是调用sbrk系统调用来扩大或缩小进程的堆栈空间) 并非所有的库函数都会调用到系统调用(例如：printf函数会调用write系统调用以输出一个字符串,但是strcpy函数不会调用任何系统调用
